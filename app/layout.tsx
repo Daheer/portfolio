@@ -9,6 +9,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: websiteMetadata.title,
   description: websiteMetadata.description,
+  creator: 'Dahiru Ibrahim',
+  icons: {
+    'icon': '/logo-2.0-with-text-light.jpg',
+  }
 };
 
 export default function RootLayout({
