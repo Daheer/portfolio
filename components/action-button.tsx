@@ -16,7 +16,7 @@ export default function ActionButton({ actionText }: ActionButtonProps) {
     router.push(path);
   }
   return (
-    <Button onClick={() => navigateTo("/#contact")}>
+    <Button disabled onClick={() => navigateTo("/#contact")}>
       <CheckCircle className="mr-2 h-4 w-4" />
       {actionText}
     </Button>

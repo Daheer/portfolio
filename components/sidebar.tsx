@@ -10,6 +10,9 @@ export default function Sidebar() {
       {/* Description */}
       <p className="text-sm text-muted-foreground tracking-tight">
         {aboutYou.description}
+        See my <a href="https://github.com/Daheer/">
+        GitHub
+      </a>
       </p>
     </div>
   );

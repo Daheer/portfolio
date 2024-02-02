@@ -1,57 +1,132 @@
 import {
-  SiTypescript,
-  SiJavascript,
-  SiReact,
+  SiArduino,
+  SiCplusplus,
+  SiDocker,
+  SiGit,
+  SiGithub,
+  SiJupyter,
+  SiLatex,
   SiNextdotjs,
   SiNodedotjs,
-  SiExpress,
+  SiNumpy,
+  SiFastapi,
+  SiPandas,
+  SiMysql,
   SiPython,
-  SiMongodb,
+  SiPytorch,
+  SiReact,
+  SiGnubash,
+  SiTensorflow,
+  SiThreedotjs,
+  SiVisualstudiocode,
+  SiJavascript,
   SiHtml5,
   SiCss3,
   SiAmazonaws,
   SiSupabase,
-  SiFirebase,
-  SiRedux,
-  SiGit,
-  SiDocker,
-  SiBootstrap,
   SiMui,
-  SiPrisma,
-  SiFlutter,
-  SiHeroku,
   SiTailwindcss,
+  SiWeightsandbiases,
+  SiMicrosoftazure,
+  SiKubernetes,
 } from "react-icons/si";
-import { BiLogoPostgresql } from "react-icons/bi";
 
 export const skills = [
   {
-    icon: SiTypescript,
-    text: "TypeScript",
+    icon: SiPython,
+    text: "Python",
   },
   {
-    icon: SiJavascript,
-    text: "JavaScript",
+    icon: SiPytorch,
+    text: "PyTorch",
+  },
+  {
+    icon: SiArduino,
+    text: "Arduino",
+  },
+  {
+    icon: SiMicrosoftazure,
+    text: "Azure",
+  },
+  {
+    icon: SiCplusplus,
+    text: "C++",
+  },
+  {
+    icon: SiDocker,
+    text: "Docker",
+  },
+  {
+    icon: SiGit,
+    text: "Git",
+  },
+  {
+    icon: SiGithub,
+    text: "GitHub",
+  },
+  {
+    icon: SiJupyter,
+    text: "Jupyter",
+  },
+  {
+    icon: SiKubernetes,
+    text: "Kubernetes",
+  },
+  {
+    icon: SiLatex,
+    text: "LaTeX",
+  },
+  {
+    icon: SiNextdotjs,
+    text: "Next.js",
+  },
+  {
+    icon: SiNodedotjs,
+    text: "Node.js",
+  },
+  {
+    icon: SiNumpy,
+    text: "NumPy",
+  },
+  {
+    icon: SiFastapi,
+    text: "FastAPI",
+  },
+  {
+    icon: SiPandas,
+    text: "Pandas",
+  },
+  {
+    icon: SiMysql,
+    text: "MySQL",
   },
   {
     icon: SiReact,
     text: "React",
   },
   {
-    icon: SiNextdotjs,
-    text: "Next",
+    icon: SiGnubash,
+    text: "Bash",
   },
   {
-    icon: SiTailwindcss,
-    text: "Tailwind",
+    icon: SiTensorflow,
+    text: "TensorFlow",
   },
   {
-    icon: SiRedux,
-    text: "Redux",
+    icon: SiThreedotjs,
+    text: "Three.js",
   },
   {
-    icon: SiFlutter,
-    text: "Flutter",
+    icon: SiVisualstudiocode,
+    text: "VS Code",
+  },
+  {
+    icon: SiWeightsandbiases,
+    text: "Weights & Biases",
+  },
+  {
+    icon: SiJavascript,
+    text: "JavaScript",
   },
   {
     icon: SiHtml5,
@@ -62,60 +137,20 @@ export const skills = [
     text: "CSS3",
   },
   {
-    icon: SiNodedotjs,
-    text: "Node",
-  },
-  {
-    icon: SiExpress,
-    text: "Express",
-  },
-  {
-    icon: SiPython,
-    text: "Python",
-  },
-  {
-    icon: BiLogoPostgresql,
-    text: "PostgreSQL",
-  },
-  {
-    icon: SiMongodb,
-    text: "MongoDB",
-  },
-  {
     icon: SiAmazonaws,
     text: "AWS",
-  },
-  {
-    icon: SiHeroku,
-    text: "Heroku",
   },
   {
     icon: SiSupabase,
     text: "Supabase",
   },
   {
-    icon: SiFirebase,
-    text: "Firebase",
-  },
-  {
-    icon: SiGit,
-    text: "Git",
-  },
-  {
-    icon: SiDocker,
-    text: "Docker",
-  },
-  {
-    icon: SiPrisma,
-    text: "Prisma",
-  },
-  {
-    icon: SiBootstrap,
-    text: "Bootstrap",
-  },
-  {
     icon: SiMui,
-    text: "MUI",
+    text: "Material-UI",
+  },
+  {
+    icon: SiTailwindcss,
+    text: "Tailwind CSS",
   },
 ];
 
@@ -127,34 +162,34 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Project 1",
-    description: "Give a short description about project 1",
-    link: "https://github.com/",
+    title: "KoroKoro",
+    description: "A novel way to view items for sale. Uses a dynamic fusion of YOLOv8, OWL-ViT, Segment-Anything, OpenCV to transform 30-second 360-degree videos into interactable 3D models.",
+    link: "http://3.87.197.112:3000/",
   },
   {
-    title: "Project 2",
-    description: "Give a short description about project 2",
-    link: "https://github.com/",
+    title: "QuickPunch",
+    description: "Get your daily summaries of Nigerian news in style. A news aggregator that scrapes news from PunchNG's RSS Feed, summarizes them, categorizes them, and distributes to users accordingly via email.",
+    link: "https://quick-punch.vercel.app",
   },
   {
-    title: "Project 3",
-    description: "Give a short description about project 3",
-    link: "https://github.com/",
+    title: "TLDR-the-TnC",
+    description: "TLDR the T&C uses an LLM to understand the contents of Terms and Conditions documents and provides a user-friendly chatbot interface for users to ask questions and receive answers.",
+    link: "https://github.com/Daheer/TLDR-the-TnC",
   },
   {
-    title: "Project 4",
-    description: "Give a short description about project 4",
-    link: "https://github.com/",
+    title: "OIDv4-2-YOLO",
+    description: "Simple toolkit for converting Open Images Dataset v4 (OIDv4) annotations to YOLO format.",
+    link: "https://github.com/Daheer/OIDv4-2-YOLO",
   },
   {
-    title: "Project 5",
-    description: "Give a short description about project 5",
-    link: "https://github.com/",
+    title: "Mood Scope",
+    description: "Mood Scope detects emotions of people in an image by embedding the image into a vector space using CLIP and comparing which emotion vector it is closest to.",
+    link: "https://github.com/Daheer/mood-scope",
   },
   {
-    title: "Project 6",
-    description: "Give a short description about project 6",
-    link: "https://github.com/",
+    title: "Fire Detector",
+    description: "Fire Detection System Using Gas and Temperature Sensors.",
+    link: "https://github.com/Daheer/fire-detector",
   },
 ];
 
@@ -168,53 +203,53 @@ export interface WorkExperience {
 
 export const workExperiences: WorkExperience[] = [
   {
-    company: "Company 3",
-    logo: "/company-logo.png",
-    position: "Company 3 Position",
-    description: "Write briefly on your experience working at Company 3.",
-    years: "Apr, 2022 - Aug, 2023",
+    company: "University of Maine",
+    logo: "/umaine.png",
+    position: "AI Research Support Consultant",
+    description: "Focus on advancing detailed object-level reconstruction by using Instant NGP, a Neural Radiance Fields platform from NVIDIA and integrating it with YOLOv8 coupled with SAM to identify individual objects within a scene",
+    years: "Jun, 2023 - Present",
   },
   {
-    company: "Company 2",
-    logo: "/company-logo.png",
-    position: "Company 2 Position",
-    description: "Write briefly on your experience working at Company 2.",
-    years: "Jan, 2020 - Mar, 2022",
+    company: "FruitPunch AI",
+    logo: "/fruitpunch.png",
+    position: "Contributor / Co-cordinator - Face Detection Team",
+    description: "Involved collaborating with researchers from Colgate University to create a facial recognition system that allows for the non-intrusive analysis of harbor seals and other marine mammals, enabling the tracking of their population and movements.",
+    years: "Dec, 2022 - Feb, 2023",
   },
   {
-    company: "Company 1",
-    logo: "/company-logo.png",
-    position: "Company 1 Position",
-    description: "Write briefly on your experience working at Company 1.",
-    years: "Aug, 2018 - Sep, 2018",
+    company: "IT Central Nigeria",
+    logo: "/itc.jpeg",
+    position: "Machine Learning Engineer",
+    description: "Built the prototype of OneCenter, an AI-powered customer care agent with an interactive voice response that performs intent classification on user complaints and responds accordingly",
+    years: "Jun, 2022 - Present",
   },
   {
-    company: "Uni Name",
-    logo: "/company-logo.png",
+    company: "Ahmadu Bello University",
+    logo: "/abu.png",
     position: "Student",
     description:
-      "Write briefly about your university experience (degree, subject, etc.)",
-    years: "Aug, 2015 - Jun, 2019",
+      "Studying Computer Engineering",
+    years: "Expected 2024",
   },
 ];
 
 export const aboutYou = {
-  name: "Your Name",
+  name: "Dahiru Ibrahim Dahiru",
   description:
-    "👋 Hi, I'm Random Person. Developer. I'm passionate about.... This is a short description about yourself.... goes in the left sidebar of the landing page.",
-  yearsOfExperience: "x years",
-  location: "Your Place",
-  email: "email@example.com",
+    "👋🏾 Hi, I'm Dahiru. Deep Learning Engineer.  I have a passion for exploring the practical applications of AI models, and that's why I'm porting my understanding of AI to the web. ",
+  yearsOfExperience: "2.5 years",
+  location: "Nigeria",
+  email: "suhayrid6@gmail.com",
 };
 
-export const logoText = "@yourname";
+export const logoText = "@daheer";
 
 export const marketingHeadlines = {
-  mainHeadline: "This is the MAIN headline.",
-  subHeadline: "Bottom. Sub. Headline.",
+  mainHeadline: "I work in the intersection of ML models and web",
+  subHeadline: "Heavily applies #GitGud in life.",
 };
 
 export const websiteMetadata = {
-  title: "Your Name | Designation",
+  title: "Dahiru Ibrahim | Machine Learning Engineer",
   description: "👋 Hey, Random Person here. Welcome to my portflio/blog.",
 };
