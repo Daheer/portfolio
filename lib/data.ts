@@ -236,7 +236,9 @@ export const workExperiences: WorkExperience[] = [
 export const aboutYou = {
   name: "Dahiru Ibrahim Dahiru",
   description:
-    "👋🏾 Hi, I'm Dahiru. Deep Learning Engineer.  I have a passion for exploring the practical applications of AI models, and that's why I'm porting my understanding of AI to the web. ",
+  "👋🏾Hi, I'm Dahiru. An AI Engineer. I get a thrill from solving real-world problems with ",
+  formula: "f = Wx + b",
+  description2: " and that's why I'm porting my understanding of AI to the web. ",
   yearsOfExperience: "2.5 years",
   location: "Nigeria",
   email: "suhayrid6@gmail.com",
