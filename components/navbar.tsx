@@ -3,7 +3,7 @@
 import { Button } from "./ui/button";
 import Logo from "./logo";
 import { ModeToggle } from "./mode-toggle";
-import { Home, Briefcase, Mail, Presentation } from "lucide-react";
+import { Home, Briefcase, Mail, Presentation, HardDriveDownload } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 export default function Navbar() {
@@ -53,6 +53,15 @@ export default function Navbar() {
         >
           <Mail className=" h-4 w-4" />
           <span className="hidden md:block ml-2">Contact</span>
+        </Button>
+        <Button
+          onClick={() => navigateTo("https://drive.google.com/file/d/16xwh0PqgquZJ_bvV9-_E6U933ZjEbPJ3/view?usp=drive_link")}
+          variant="outline"
+          size="sm"
+          className="ml-auto h-8"
+        >
+          <HardDriveDownload className=" h-4 w-4" />
+          <span className="hidden md:block ml-2">Resume</span>
         </Button>
         <ModeToggle />
       </div>
