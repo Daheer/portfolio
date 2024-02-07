@@ -24,7 +24,7 @@ export default function Navbar() {
           size="sm"
           className="ml-auto h-8"
         >
-          <Home className=" h-4 w-4" />
+          <Home className=" h-3 w-3" />
           <span className="hidden md:block ml-2">Home</span>
         </Button>
         <Button
