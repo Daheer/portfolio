@@ -214,7 +214,7 @@ export const workExperiences: WorkExperience[] = [
     logo: "/ultrabrainai-logo.jpg",
     position: "AI Engineer",
     description: "Involved optimizing the company's flagship AI models for real-world efficiency to achieve a multiple times inference speedup with TensorRT",
-    years: "Aug, 2023 - Apr, 2024"
+    years: "Aug, 2023 - Apr, 2024",
   },
   {
     company: "FruitPunch AI",
