@@ -210,6 +210,13 @@ export const workExperiences: WorkExperience[] = [
     years: "Jun, 2023 - Present",
   },
   {
+    company: "Ultrabrain AI",
+    logo: "/ultrabrainai-logo.jpg",
+    position: "AI Engineer",
+    description: "Involved optimizing the company's flagship AI models for real-world efficiency to achieve a multiple times inference speedup with TensorRT",
+    years: "Aug, 2023 - Apr, 2024"
+  },
+  {
     company: "FruitPunch AI",
     logo: "/fruitpunch.png",
     position: "Contributor / Co-cordinator - Face Detection Team",
