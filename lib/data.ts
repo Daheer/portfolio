@@ -191,6 +191,11 @@ export const projects: Project[] = [
     description: "Fire Detection System Using Gas and Temperature Sensors.",
     link: "https://github.com/Daheer/fire-detector",
   },
+  {
+    title: "Deriv Notify",
+    description: "Send e-mail alerts when a symbol's quote reaches a set threshold. Uses Deriv API",
+    link: "http://34.229.163.75:3003/",
+  },
 ];
 
 export interface WorkExperience {
