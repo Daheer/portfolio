@@ -162,6 +162,11 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "StoryStory",
+    description: "Story-Story is an engaging storytelling app designed for children. It takes the rich histories of Nigerian and African figures and turns them into child-friendly, factual stories with vibrant illustrations and captivating narratives",
+    link: "https://naija-heroes.vercel.app/"
+  },
+  {
     title: "KoroKoro",
     description: "A novel way to view items for sale. Uses a dynamic fusion of YOLOv8, OWL-ViT, Segment-Anything, OpenCV to transform 30-second 360-degree videos into interactable 3D models.",
     link: "http://3.87.197.112:3000/",
@@ -208,11 +213,11 @@ export interface WorkExperience {
 
 export const workExperiences: WorkExperience[] = [
   {
-    company: "University of Maine",
-    logo: "/umaine.png",
-    position: "AI Research Support Consultant",
-    description: "Focus on advancing detailed object-level reconstruction by using Instant NGP, a Neural Radiance Fields platform from NVIDIA and integrating it with YOLOv8 coupled with SAM to identify individual objects within a scene",
-    years: "Jun, 2023 - Present",
+    company: "NabafatAI",
+    logo: "/nabafat.png",
+    position: "Machine Learning Engineer",
+    description: "Enhanced AI capabilities by reducing hallucination in Video-LLaMA, developing multi-agentic workflows with LangGraph, creating a MongoDB retrieval tool, and fine-tuning Gorilla-LLM for enterprise API retrieval.",
+    years: "Jun, 2024 - Present"
   },
   {
     company: "Ultrabrain AI",
@@ -222,26 +227,32 @@ export const workExperiences: WorkExperience[] = [
     years: "Aug, 2023 - Apr, 2024",
   },
   {
+    company: "University of Maine",
+    logo: "/umaine.png",
+    position: "AI Research Support Consultant",
+    description: "Focus on advancing detailed object-level reconstruction by using Instant NGP, a Neural Radiance Fields platform from NVIDIA and integrating it with YOLOv8 coupled with SAM to identify individual objects within a scene",
+    years: "Jun, 2023 - Mar, 2024",
+  },
+  {
     company: "FruitPunch AI",
     logo: "/fruitpunch.png",
     position: "Contributor / Co-cordinator - Face Detection Team",
     description: "Involved collaborating with researchers from Colgate University to create a facial recognition system that allows for the non-intrusive analysis of harbor seals and other marine mammals, enabling the tracking of their population and movements.",
     years: "Dec, 2022 - Feb, 2023",
   },
-  {
-    company: "IT Central Nigeria",
-    logo: "/itc.jpeg",
-    position: "Machine Learning Engineer",
-    description: "Built the prototype of OneCenter, an AI-powered customer care agent with an interactive voice response that performs intent classification on user complaints and responds accordingly",
-    years: "Jun, 2022 - Present",
-  },
+  // {
+  //   company: "IT Central Nigeria",
+  //   logo: "/itc.jpeg",
+  //   position: "Machine Learning Engineer",
+  //   description: "Built the prototype of OneCenter, an AI-powered customer care agent with an interactive voice response that performs intent classification on user complaints and responds accordingly",
+  //   years: "Jun, 2022 - Present",
+  // },
   {
     company: "Ahmadu Bello University",
     logo: "/abu.png",
     position: "Student",
-    description:
-      "Studying Computer Engineering",
-    years: "Expected 2024",
+    description: "Graduated 4.20/5.00. Relevant coursework: Control engineering, digital electronics, machine learning, embedded systems, digital communication, computer networking",
+    years: "2024",
   },
 ];
 
