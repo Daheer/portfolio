@@ -12,11 +12,11 @@ export default function Sidebar() {
         {aboutYou.description}
         <i>{aboutYou.formula}</i>
         {aboutYou.description2}
-        Read my 
+        Read my {" "}
         <a href="https://daheer.github.io/">
           Blog
         </a>
-        See my 
+        {" "} See my {" "}
         <a href="https://github.com/Daheer/">
           GitHub
         </a>
