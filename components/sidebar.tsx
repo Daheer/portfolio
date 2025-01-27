@@ -12,9 +12,14 @@ export default function Sidebar() {
         {aboutYou.description}
         <i>{aboutYou.formula}</i>
         {aboutYou.description2}
-        See my <a href="https://github.com/Daheer/">
-        GitHub
-      </a>
+        Read my {" "}
+        <a href="https://daheer.github.io/">
+          Blog
+        </a>
+        {" "} See my {" "}
+        <a href="https://github.com/Daheer/">
+          GitHub
+        </a>
       </p>
     </div>
   );
