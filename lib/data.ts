@@ -162,14 +162,14 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "KoroKoro",
+    description: "A powerful 2D to 3D pipeline. Uses a dynamic fusion of YOLOv8, GroundingDINO, Segment-Anything2 & Gaussian Splatting to transform 30-second 360-degree videos into interactable 3D models.",
+    link: "https://daheer.github.io/korokoro-web-v2",
+  },
+  {
     title: "StoryStory",
     description: "Story-Story is an engaging storytelling app designed for children. It takes the rich histories of Nigerian and African figures and turns them into child-friendly, factual stories with vibrant illustrations and captivating narratives",
     link: "https://naija-heroes.vercel.app/"
-  },
-  {
-    title: "KoroKoro",
-    description: "A novel way to view items for sale. Uses a dynamic fusion of YOLOv8, OWL-ViT, Segment-Anything, OpenCV to transform 30-second 360-degree videos into interactable 3D models.",
-    link: "http://3.87.197.112:3000/",
   },
   {
     title: "QuickPunch",
