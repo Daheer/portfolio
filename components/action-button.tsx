@@ -1,24 +1,12 @@
-"use client";
-
-import React from "react";
+import { aboutYou } from "@/lib/data";
 import { Button } from "./ui/button";
-import { CheckCircle } from "lucide-react";
-import { useRouter } from "next/navigation";
 
-interface ActionButtonProps {
-  actionText: string;
-}
-
-export default function ActionButton({ actionText }: ActionButtonProps) {
-  const router = useRouter();
-
-  function navigateTo(path: string) {
-    router.push(path);
-  }
+export default function ActionButton({ actionText }: { actionText: string }) {
   return (
-    <Button disabled onClick={() => navigateTo("/#contact")}>
-      <CheckCircle className="mr-2 h-4 w-4" />
-      {actionText}
+    <Button asChild>
+      <a href={`mailto:${aboutYou.email}`} className="no-underline">
+        {actionText}
+      </a>
     </Button>
   );
 }

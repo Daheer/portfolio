@@ -29,9 +29,15 @@ import {
   SiWeightsandbiases,
   SiMicrosoftazure,
   SiKubernetes,
+  SiPostgresql,
+  SiRedis,
+  SiTypescript,
 } from "react-icons/si";
 
 export const skills = [
+  { icon: SiPostgresql, text: "PostgreSQL" },
+  { icon: SiRedis, text: "Redis" },
+  { icon: SiTypescript, text: "TypeScript" },
   {
     icon: SiPython,
     text: "Python",
@@ -156,113 +162,170 @@ export const skills = [
 
 export interface Project {
   title: string;
+  category: string;
   description: string;
   link: string;
 }
 
 export const projects: Project[] = [
   {
+    title: "OrbitalsAI",
+    category: "Speech & language AI · Co-founder",
+    description:
+      "Building African speech-to-text and voice intelligence, with batch and real-time transcription. My work spans speech and language systems, API design, inference infrastructure and production reliability.",
+    link: "https://www.orbitalsai.com",
+  },
+  {
+    title: "PrepTab",
+    category: "Education · Co-founder & engineer",
+    description:
+      "An offline-first Android platform for WAEC, NECO and JAMB preparation. Built for connectivity and shared-device realities, with English, Hausa, Yoruba and Igbo support, practice questions, read-aloud explanations and progress tracking.",
+    link: "https://www.preptab.com",
+  },
+  {
+    title: "De Signature International",
+    category: "Hospitality · Platform engineering",
+    description:
+      "Engineering across a public booking website, staff dashboard and Android in-room experience. Connects reservations, guest management, housekeeping and restaurant ordering in one operational platform.",
+    link: "https://www.designaturehotel.com",
+  },
+  {
+    title: "Story-Story",
+    category: "Agentic AI · Award-winning project",
+    description:
+      "An illustrated storytelling system about African historical figures, orchestrated with LangGraph. Planner, storyteller, illustrator and publisher agents work together to create structured, child-friendly narratives. A Best Creative AI Project winner in the Agentic AI Innovation Challenge 2025.",
+    link: "https://naija-heroes.vercel.app/",
+  },
+  {
     title: "KoroKoro",
-    description: "A powerful 2D to 3D pipeline. Uses a dynamic fusion of YOLOv8, GroundingDINO, Segment-Anything2 & Gaussian Splatting to transform 30-second 360-degree videos into interactable 3D models.",
+    category: "Computer vision · Neural rendering",
+    description:
+      "A pipeline that turns approximately 30-second, 360-degree product videos into interactive 3D representations using object detection, segmentation and neural rendering.",
     link: "https://daheer.github.io/korokoro-web-v2",
   },
   {
-    title: "StoryStory",
-    description: "Story-Story is an engaging storytelling app designed for children. It takes the rich histories of Nigerian and African figures and turns them into child-friendly, factual stories with vibrant illustrations and captivating narratives",
-    link: "https://naija-heroes.vercel.app/"
-  },
-  {
     title: "QuickPunch",
-    description: "Get your daily summaries of Nigerian news in style. A news aggregator that scrapes news from PunchNG's RSS Feed, summarizes them, categorizes them, and distributes to users accordingly via email.",
+    category: "NLP · News summarization",
+    description:
+      "A Nigerian-news summarization project that gathers articles from Punch's RSS feed, produces categorized summaries and delivers them by email.",
     link: "https://quick-punch.vercel.app",
-  },
-  {
-    title: "TLDR-the-TnC",
-    description: "TLDR the T&C uses an LLM to understand the contents of Terms and Conditions documents and provides a user-friendly chatbot interface for users to ask questions and receive answers.",
-    link: "https://github.com/Daheer/TLDR-the-TnC",
-  },
-  {
-    title: "OIDv4-2-YOLO",
-    description: "Simple toolkit for converting Open Images Dataset v4 (OIDv4) annotations to YOLO format.",
-    link: "https://github.com/Daheer/OIDv4-2-YOLO",
-  },
-  {
-    title: "Mood Scope",
-    description: "Mood Scope detects emotions of people in an image by embedding the image into a vector space using CLIP and comparing which emotion vector it is closest to.",
-    link: "https://github.com/Daheer/mood-scope",
-  },
-  {
-    title: "Fire Detector",
-    description: "Fire Detection System Using Gas and Temperature Sensors.",
-    link: "https://github.com/Daheer/fire-detector",
-  },
-  {
-    title: "Deriv Notify",
-    description: "Send e-mail alerts when a symbol's quote reaches a set threshold. Uses Deriv API",
-    link: "http://34.229.163.75:3003/",
   },
 ];
 
 export interface WorkExperience {
   company: string;
-  logo: string;
+  logo?: string;
   position: string;
   description: string;
-  years: string;
+  years?: string;
 }
 
+// OrbitalsAI dates remain omitted pending confirmation. UMaine and NabafatAI
+// dates match the original portfolio, restored at Dahiru's request.
 export const workExperiences: WorkExperience[] = [
   {
-    company: "NabafatAI",
-    logo: "./nabafat.png",
-    position: "Machine Learning Engineer",
-    description: "Enhanced AI capabilities by reducing hallucination in Video-LLaMA, developing multi-agentic workflows with LangGraph, creating a MongoDB retrieval tool, and fine-tuning Gorilla-LLM for enterprise API retrieval.",
-    years: "Jun, 2024 - Present"
-  },
-  {
-    company: "Ultrabrain AI",
-    logo: "./ultrabrainai-logo.jpg",
-    position: "AI Engineer",
-    description: "Involved optimizing the company's flagship AI models for real-world efficiency to achieve a multiple times inference speedup with TensorRT",
-    years: "Aug, 2023 - Apr, 2024",
+    company: "OrbitalsAI",
+    logo: "/portfolio/orbitalsai.png",
+    position: "Co-founder · Speech & language AI",
+    description:
+      "Co-founded a voice-intelligence platform focused on African languages. Contribute across speech recognition, multilingual NLP, model evaluation, backend engineering and the infrastructure that brings models into production.",
   },
   {
     company: "University of Maine",
-    logo: "./umaine.png",
+    logo: "/portfolio/umaine.png",
+    years: "Jun 2023 – Mar 2024",
     position: "AI Research Support Consultant",
-    description: "Focus on advancing detailed object-level reconstruction by using Instant NGP, a Neural Radiance Fields platform from NVIDIA and integrating it with YOLOv8 coupled with SAM to identify individual objects within a scene",
-    years: "Jun, 2023 - Mar, 2024",
+    description:
+      "Developed an object-level neural-reconstruction pipeline combining NVIDIA Instant-NGP, YOLO and Segment Anything. Achieved approximately 30× faster processing and a 20% improvement in reconstruction PSNR against the research baseline by focusing computation on the target object.",
+  },
+  {
+    company: "NabafatAI",
+    logo: "/portfolio/nabafat.png",
+    years: "Jun 2024 – Present",
+    position: "Machine Learning Engineer",
+    description:
+      "Reduced Video-LLaMA object-level hallucination by 32% and sentence-level hallucination by 26%, evaluated with CHAIR. Built stateful LangGraph workflows, MongoDB-grounded retrieval and fine-tuned Gorilla LLM for enterprise API calls.",
+  },
+  {
+    company: "UltrabrainAI",
+    logo: "/portfolio/ultrabrainai-logo.jpg",
+    position: "AI Engineer",
+    description:
+      "Optimized computer-vision inference with TensorRT for approximately 3× faster inference. Developed YOLO-based features and trained and evaluated YOLOv9 on WIDER FACE, packaging the model for public loading through Torch Hub.",
+    years: "Aug 2023 – Apr 2024",
+  },
+  {
+    company: "iT Central Nigeria",
+    logo: "/portfolio/itc.jpeg",
+    position: "Machine Learning Engineer · Promoted from intern",
+    description:
+      "Joined as a Machine Learning Engineer Intern in June 2022 and progressed to Machine Learning Engineer in December 2022.",
+    years: "Jun 2022 – Sep 2024",
   },
   {
     company: "FruitPunch AI",
-    logo: "./fruitpunch.png",
-    position: "Contributor / Co-cordinator - Face Detection Team",
-    description: "Involved collaborating with researchers from Colgate University to create a facial recognition system that allows for the non-intrusive analysis of harbor seals and other marine mammals, enabling the tracking of their population and movements.",
-    years: "Dec, 2022 - Feb, 2023",
+    logo: "/portfolio/fruitpunch.png",
+    position: "Contributor / Co-coordinator · Face Detection Team",
+    description:
+      "Contributed to Understanding Seals with AI, collaborating on computer-vision research for non-intrusive monitoring of marine mammals.",
+    years: "Dec 2022 – Feb 2023",
   },
-  // {
-  //   company: "IT Central Nigeria",
-  //   logo: "/itc.jpeg",
-  //   position: "Machine Learning Engineer",
-  //   description: "Built the prototype of OneCenter, an AI-powered customer care agent with an interactive voice response that performs intent classification on user complaints and responds accordingly",
-  //   years: "Jun, 2022 - Present",
-  // },
+];
+
+export const education = [
   {
-    company: "Ahmadu Bello University",
-    logo: "./abu.png",
-    position: "Student",
-    description: "Graduated 4.20/5.00. Relevant coursework: Control engineering, digital electronics, machine learning, embedded systems, digital communication, computer networking",
-    years: "2024",
+    institution: "Ahmadu Bello University, Zaria",
+    logo: "/portfolio/abu.png",
+    qualification: "B.Eng. Computer Engineering",
+    years: "2018–2024",
+    grade: "GPA 4.20/5.00",
   },
+  {
+    institution: "Iya Abubakar Institute of ICT, Zaria",
+    logo: "/portfolio/abu.png",
+    qualification: "Diploma in Computer Systems Engineering",
+    years: "2017–2019",
+    grade: "GPA 3.00/4.00",
+  },
+];
+
+export const recognition = [
+  {
+    title: "Best Creative AI Project · 2025",
+    description:
+      "Story-Story was one of four winners in this category of the ReadyTensor Agentic AI Innovation Challenge.",
+  },
+  {
+    title: "Code-mixed Hausa transformer research",
+    description:
+      "Co-authored research benchmarking the performance and efficiency of transformer models for code-mixed Hausa.",
+  },
+  {
+    title: "Community teaching & speaking",
+    description:
+      "Facilitated a five-day applied-machine-learning workshop in Lafia through Data Scientists Network Nigeria, contributed to GDSC technical-learning initiatives and shared work on deep-learning-powered 3D product visualization.",
+  },
+];
+
+export const socialLinks = [
+  { label: "GitHub", href: "https://github.com/Daheer" },
+  { label: "LinkedIn", href: "https://linkedin.com/in/daheer-deedax" },
+  { label: "Hugging Face", href: "https://huggingface.co/deedax" },
+  { label: "ReadyTensor", href: "https://app.readytensor.ai/users/suhayrid6" },
+  { label: "YouTube", href: "https://www.youtube.com/@deedaxinc.3389" },
+  { label: "Speaking", href: "https://sessionize.com/dahiru-ibrahim-dahiru/" },
 ];
 
 export const aboutYou = {
   name: "Dahiru Ibrahim Dahiru",
+  suffix: "GMNSE",
+  role: "AI engineer & technology founder",
   description:
-  "👋🏾Hi, I'm Dahiru. An AI Engineer. I get a thrill from solving real-world problems with ",
-  formula: "f = Wx + b",
-  description2: " and that's why I'm porting my understanding of AI to the web. ",
-  yearsOfExperience: "2.5 years",
+    "I build machine learning and digital infrastructure for African languages, institutions and everyday operating conditions.",
+  mission:
+    "My goal is to help Africa participate as a producer of advanced technology, through locally relevant AI, useful products and shared knowledge.",
+  focus: "Low-resource speech & language AI",
+  yearsOfExperience: "4+ years",
   location: "Nigeria",
   email: "suhayrid6@gmail.com",
 };
@@ -270,11 +333,13 @@ export const aboutYou = {
 export const logoText = "@daheer";
 
 export const marketingHeadlines = {
-  mainHeadline: "I work in the intersection of ML models and web",
-  subHeadline: "Heavily applies #GitGud in life.",
+  mainHeadline: "Building AI for African languages. Products for real life.",
+  subHeadline:
+    "I'm Dahiru, an AI engineer, co-founder and product builder. My focus is low-resource speech and language AI, backed by experience in computer vision, agentic systems and the engineering needed to ship reliable products.",
 };
 
 export const websiteMetadata = {
-  title: "Dahiru Ibrahim | Machine Learning Engineer",
-  description: "👋 Hey, Random Person here. Welcome to my portflio/blog.",
+  title: "Dahiru Ibrahim Dahiru | AI Engineer & Technology Founder",
+  description:
+    "Dahiru Ibrahim Dahiru builds African-language AI and digital infrastructure. Explore work across OrbitalsAI, PrepTab, applied research and production software.",
 };

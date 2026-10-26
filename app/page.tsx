@@ -11,6 +11,8 @@ import {
   Project,
   WorkExperience,
   aboutYou,
+  education,
+  recognition,
   marketingHeadlines,
   projects,
   skills,
@@ -26,9 +28,9 @@ export default function Home() {
         <div className="md:min-w-[65vh] min-w-full space-y-10">
           {/* Hero */}
           <section id="home" key="home" className="space-y-5">
-            <div className="text-2xl font-bold tracking-tight">
+            <h1 className="text-2xl font-bold tracking-tight">
               {marketingHeadlines.mainHeadline}
-            </div>
+            </h1>
             <div className="text-muted-foreground">
               {marketingHeadlines.subHeadline}
             </div>
@@ -36,7 +38,7 @@ export default function Home() {
               <Separator />
             </div>
             <div className="flex justify-between">
-              <ActionButton actionText="Hire me" />
+              <ActionButton actionText="Get in touch" />
               <div className="space-y-1">
                 <h3 className="font-medium leading-none">
                   {aboutYou.yearsOfExperience}
@@ -88,6 +90,34 @@ export default function Home() {
                     />
                   )
                 )}
+              </div>
+            </div>
+          </section>
+          <section id="education">
+            <h2 className="text-2xl font-semibold tracking-tight">Education</h2>
+            <div className="mt-5 rounded-xl border bg-card text-card-foreground shadow">
+              <div className="p-6 space-y-6">
+                {education.map((item, index) => (
+                  <WorkShowcase
+                    key={item.institution}
+                    experience={{ company: item.institution, logo: item.logo, position: item.qualification, description: item.grade, years: item.years }}
+                    whetherlast={index === education.length - 1}
+                  />
+                ))}
+              </div>
+            </div>
+          </section>
+          <section id="recognition">
+            <h2 className="text-2xl font-semibold tracking-tight">Research, awards & community</h2>
+            <div className="mt-5 rounded-xl border bg-card text-card-foreground shadow">
+              <div className="p-6 space-y-6">
+                {recognition.map((item, index) => (
+                  <div key={item.title} className="space-y-2">
+                    <h3 className="font-semibold leading-none tracking-tight">{item.title}</h3>
+                    <p className="text-sm text-muted-foreground pb-2">{item.description}</p>
+                    {index < recognition.length - 1 && <Separator />}
+                  </div>
+                ))}
               </div>
             </div>
           </section>

@@ -7,12 +7,24 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://daheer.github.io"),
   title: websiteMetadata.title,
   description: websiteMetadata.description,
-  creator: 'Dahiru Ibrahim',
+  creator: "Dahiru Ibrahim Dahiru",
+  openGraph: {
+    title: websiteMetadata.title,
+    description: websiteMetadata.description,
+    type: "website",
+    locale: "en_NG",
+  },
+  twitter: {
+    card: "summary",
+    title: websiteMetadata.title,
+    description: websiteMetadata.description,
+  },
   icons: {
-    'icon': '/logo-2.0-with-text-light.jpg',
-  }
+    icon: "/portfolio/logo-2.0-with-text-light.jpg",
+  },
 };
 
 export default function RootLayout({
@@ -21,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           {children}

@@ -1,34 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Dahiru Ibrahim Dahiru — Portfolio
 
-## Getting Started
+Personal portfolio for Dahiru Ibrahim Dahiru, GMNSE: AI engineer, technology founder and product builder focused on African-language AI and digital infrastructure.
 
-First, run the development server:
+Built with Next.js, TypeScript and Tailwind CSS. Supports light, dark and system themes, and exports a static site for the existing GitHub Pages deployment.
+
+## Local development
 
 ```bash
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000/portfolio. The `/portfolio` base path is configured in `next.config.js`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Validation and build
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+npx tsc --noEmit
+npm run build
+```
 
-## Learn More
+The static build is written to `out/`. The existing GitHub Actions workflow builds and deploys it when changes are pushed to `main`.
 
-To learn more about Next.js, take a look at the following resources:
+## Updating content
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Edit `lib/data.ts` for profile copy, selected projects, professional contributions, education, recognition, skills and social links. Page sections are in `app/page.tsx`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+OrbitalsAI dates remain omitted pending confirmation. University of Maine (Jun 2023–Mar 2024) and NabafatAI (Jun 2024–Present) dates match the original portfolio, restored at Dahiru’s request. Confidential client work and unverified adoption figures are excluded. The original résumé destination is preserved.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Public image paths include `/portfolio/` to match the GitHub Pages base path. Keep those paths and layout metadata aligned if the base path changes.
